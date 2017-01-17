@@ -37,16 +37,6 @@ C.getChange = function (totalPayable, cashPaid) {
 it('getChange(486,1000) should equal [500, 10, 2, 2]', function(){
     assert.deepEqual(C.getChange(486,1000), [500, 10, 2, 2]);
 })
-C.getChange = function (totalPayable, cashPaid) {
-    'use strict';
-    if(totalPayable == 486 && cashPaid == 1000)
-        return [500, 10, 2, 2];
-    else if(totalPayable == 210 && cashPaid == 300)
-        return [50, 20, 20];
-};/*
-it('getChange(486,1000) should equal [500, 10, 2, 2]', function(){
-    assert.deepEqual(C.getChange(486,1000), [500, 10, 2, 2]);
-})
 var C = {};     // C Object simplifies exporting the module
 C.coins = [5000, 2000, 1000, 500, 200, 100, 50, 20, 10, 5, 2, 1]
 C.getChange = function (totalPayable, cashPaid) {
@@ -76,4 +66,4 @@ dfference    = 8513                                 // £85.13
 change       = [5000, 2000, 1000, 500, 10, 2, 1 ]   // £50, £20, £10, £5, 10p, 2p, 1p
 it('getChange(1487,10000) should equal [5000, 2000, 1000, 500, 10, 2, 1 ]', function(){
     assert.deepEqual(C.getChange(1487,10000), [5000, 2000, 1000, 500, 10, 2, 1 ]);
-});*/
+});
