@@ -33,7 +33,10 @@ it('getChange(210,300) should equal [50,20,20]', function(){
 C.getChange = function (totalPayable, cashPaid) {
     'use strict';
     return [50, 20, 20];    // just enough to pass :-)
-};/*
+};
+it('getChange(486,1000) should equal [500, 10, 2, 2]', function(){
+    assert.deepEqual(C.getChange(486,1000), [500, 10, 2, 2]);
+})/*
 it('getChange(486,1000) should equal [500, 10, 2, 2]', function(){
     assert.deepEqual(C.getChange(486,1000), [500, 10, 2, 2]);
 })
